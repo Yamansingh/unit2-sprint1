@@ -1,0 +1,119 @@
+#head{
+    height: 100px;
+    background-color: rgb(184, 238, 220);
+}
+#first-row{
+    width: 90vw;
+    margin: auto;
+    display: flex;
+}
+#first-row > div{
+    width: 30%;
+    margin: 1.5%;
+    height: 10vw;
+    background-color: blueviolet;
+    border-radius: 5px;
+}
+.inner-box{
+    display: flex;
+    color: white;
+    font-weight: 100;
+}
+.inner-box > div:nth-child(1){
+    width: 8vw;
+    height: 8vw;
+    background-color: chartreuse;
+    margin: 1vw 1vw;
+    border-radius: 50%;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+   .inner-box > div:nth-child(2){
+       margin-top: 2vw;
+
+   }
+   h1{
+       text-align: center;
+       color: darkblue;
+       font-weight: 200;
+   }
+   #row-2{
+       display: flex;
+       margin:  20px auto;
+       width: 330px;
+       background-color: rgb(239, 248, 245);
+   }
+   #row-2>div{
+       border: 1px solid blueviolet;
+       text-align: center;
+       width: 25%;
+   }
+   #row-2 >div:nth-child(1){
+       background-color: blue;
+       color: white;
+   }
+   #row-3{
+       display: grid;
+       width: 90vw;
+       margin: auto;
+       grid-gap: 5px;
+       grid-template: "a "
+                       "b"
+                        "c";
+
+
+
+
+   }
+  
+   
+   .image > img{
+       height: 200px;
+       width: 100%;
+   }
+   .image{
+       text-align: start;
+   }
+   
+   #first-box{
+       grid-area: a;
+   }
+   #second-box{
+       grid-area: b;
+   }
+   #third-box{
+       grid-area: c;
+   }
+   @media (min-width:600px) {
+       #row-3{
+           grid-template: 'a b'
+                           'c b';
+       }
+   }
+   @media (min-width:1000px) {
+    #row-3{
+        grid-template: 'a b c'
+                        ;
+    }
+}
+.image > h5 ,p{
+    color: grey;
+}
+  
+  .apply{
+      border: 1px solid palegreen;
+      width: 100px;
+      margin-left: 5vw;
+      color: blue;
+      text-align: center;
+      padding: 1vw;
+      background-color: rgba(169, 169, 169, 0.904);
+  }
+  #first-row > div:nth-child(1){
+      background-color: darkorange;
+  }
+  #first-row > div:nth-child(3){
+  background-color: rgb(49, 6, 6);
+  }
